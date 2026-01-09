@@ -3,16 +3,16 @@ const app = express();
 
 app.use(express.json());
 
+const authRoutes = require('./routes/auth');
+app.use('/auth', authRoutes);
+
 app.get('/', (req, res) => {
   res.json({
     service: "auth-service",
-    status: "development",
-    version: "0.1.0"
+    status: "active",
+    version: "0.2.0"
   });
 });
-
-// auth routes will be added here
-// app.use('/auth', require('./routes/auth'));
 
 const PORT = process.env.PORT || 3000;
 
