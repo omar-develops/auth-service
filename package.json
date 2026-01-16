@@ -1,12 +1,26 @@
 {
   "name": "auth-service",
-  "version": "0.1.0",
-  "description": "Internal authentication service for Blue Startup",
+  "version": "0.3.0",
+  "description": "Internal authentication service for enterprise applications",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"No tests defined\" && exit 0"
   },
+  "keywords": [
+    "auth",
+    "security",
+    "nodejs",
+    "express",
+    "internal-service"
+  ],
+  "author": "Omar Hassan",
+  "license": "UNLICENSED",
   "dependencies": {
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
   }
 }
